@@ -12,7 +12,7 @@ nano stationd_auto_restart.sh
 #!/bin/bash
 
 # Yeniden başlatma aralığını saniye cinsinden ayarlayın (örneğin, her 60 saniyede bir)
-RESTART_INTERVAL=150
+RESTART_INTERVAL=900
 
 # Sonsuz döngü içinde çalışacak
 while true; do
