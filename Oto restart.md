@@ -1,11 +1,13 @@
 Track Restart
 
 ```
-screen -S restart```
+screen -S restart
 
 ```
-nano stationd_auto_restart.sh```
+```
+nano stationd_auto_restart.sh
 
+```
 ```
 #!/bin/bash
 
@@ -25,4 +27,6 @@ done
 ```
 chmod +x stationd_auto_restart.sh```
 ```
-./stationd_auto_restart.sh```
+```
+./stationd_auto_restart.sh
+```
