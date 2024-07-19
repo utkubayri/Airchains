@@ -25,7 +25,7 @@ while true; do
 done
 ```
 ```
-chmod +x stationd_auto_restart.sh```
+chmod +x stationd_auto_restart.sh
 ```
 ```
 ./stationd_auto_restart.sh
