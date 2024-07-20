@@ -5,6 +5,9 @@ screen -S restart
 
 ```
 ```
+cd tracks
+```
+```
 nano stationd_auto_restart.sh
 
 ```
