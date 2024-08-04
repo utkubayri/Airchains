@@ -22,7 +22,7 @@ error_patterns=(
     "Switchyard client connection error"
     "Failed to Init VRF" 
 )
-restart_delay=180  # Restart delay in seconds (3 minutes)
+restart_delay=18000  # Restart delay in seconds (3 minutes)
 
 echo "Script started and it will rollback $service_name if needed..."
 
@@ -49,6 +49,9 @@ while true; do
     go run cmd/main.go rollback
     go run cmd/main.go rollback
     go run cmd/main.go rollback
+    go run cmd/main.go rollback
+    go run cmd/main.go rollback
+    sudo systemctl restart stationd
     echo "Rollback completed, starting $service_name..."
     systemctl start "$service_name"
     echo "Service $service_name started"
